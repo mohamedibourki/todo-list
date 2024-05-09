@@ -1,3 +1,10 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     max-width: 600px;
     margin: 50px auto;
@@ -13,12 +20,24 @@ h1 {
 }
 
 input[type="text"] {
-    width: 100%;
-    padding: 10px;
+    width: calc(100% - 200px);
+    padding: 8px;
     margin-bottom: 10px;
-    box-sizing: border-box;
+    border-radius: 4px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
 
 ul {
@@ -28,20 +47,26 @@ ul {
 
 li {
     padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 5px;
     background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.completed {
-    text-decoration: line-through;
+#buttonDeleteAll {
+    margin-top: 20px;
+    background-color: #dc3545;
+    margin-left: 10px; /* Add margin to the left */
 }
 
-.checkbox-container {
-    margin-bottom: 10px;
+#buttonDeleteAll:hover {
+    background-color: #c82333;
 }
 
-.checkbox-container input[type="checkbox"] {
-    margin-right: 5px;
+.addNewTask {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 30px;
 }
